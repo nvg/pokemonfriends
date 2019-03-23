@@ -1,28 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import CardList from './components/CardList';
+import SearchBox from './components/SearchBox';
+import Scroll from './components/Scroll';
+// import { pokemons } from './pokemons.js';
 
-export default App;
+export default class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            pokemons: [], // pokemons,
+            search: ''
+        }
+    }
+
+    componentDidMount() {
+        fetch('https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/pokedex.json')
+            .then(response => {
+                return response.json();
+            }).then(pokemons => {
+                this.setState({ pokemons: pokemons.slice(1, 100) });
+            });
+    }
+
+    onSearchChange = (event) => {
+        this.setState({ search: event.target.value });
+    }
+
+    render() {
+        const filteredPokemons = this.state.pokemons.filter(p => {
+            return p.name.english.toLocaleLowerCase().includes(this.state.search.toLowerCase());
+        });
+
+        return (
+            <div className='tc'>
+                <h1>Pokemon Friends</h1>
+                <SearchBox searchChange={this.onSearchChange} />
+                <Scroll>
+                    <CardList pokemons={filteredPokemons} />
+                </Scroll>
+            </div>
+        )
+    };
+};
