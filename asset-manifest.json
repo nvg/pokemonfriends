@@ -1,15 +1,15 @@
 {
-  "main.css": "/pokemonfriends/build/static/css/main.b3f8b4f5.chunk.css",
-  "main.js": "/pokemonfriends/build/static/js/main.0f13a290.chunk.js",
-  "main.js.map": "/pokemonfriends/build/static/js/main.0f13a290.chunk.js.map",
-  "runtime~main.js": "/pokemonfriends/build/static/js/runtime~main.a35a9fc2.js",
-  "runtime~main.js.map": "/pokemonfriends/build/static/js/runtime~main.a35a9fc2.js.map",
-  "static/css/2.31de2960.chunk.css": "/pokemonfriends/build/static/css/2.31de2960.chunk.css",
-  "static/js/2.811fa40c.chunk.js": "/pokemonfriends/build/static/js/2.811fa40c.chunk.js",
-  "static/js/2.811fa40c.chunk.js.map": "/pokemonfriends/build/static/js/2.811fa40c.chunk.js.map",
-  "index.html": "/pokemonfriends/build/index.html",
-  "precache-manifest.b4509932c6c894f8e56f8364512fe194.js": "/pokemonfriends/build/precache-manifest.b4509932c6c894f8e56f8364512fe194.js",
-  "service-worker.js": "/pokemonfriends/build/service-worker.js",
-  "static/css/2.31de2960.chunk.css.map": "/pokemonfriends/build/static/css/2.31de2960.chunk.css.map",
-  "static/css/main.b3f8b4f5.chunk.css.map": "/pokemonfriends/build/static/css/main.b3f8b4f5.chunk.css.map"
+  "main.css": "/pokemonfriends/static/css/main.b3f8b4f5.chunk.css",
+  "main.js": "/pokemonfriends/static/js/main.787c6195.chunk.js",
+  "main.js.map": "/pokemonfriends/static/js/main.787c6195.chunk.js.map",
+  "runtime~main.js": "/pokemonfriends/static/js/runtime~main.d5fdc5a5.js",
+  "runtime~main.js.map": "/pokemonfriends/static/js/runtime~main.d5fdc5a5.js.map",
+  "static/css/2.31de2960.chunk.css": "/pokemonfriends/static/css/2.31de2960.chunk.css",
+  "static/js/2.811fa40c.chunk.js": "/pokemonfriends/static/js/2.811fa40c.chunk.js",
+  "static/js/2.811fa40c.chunk.js.map": "/pokemonfriends/static/js/2.811fa40c.chunk.js.map",
+  "index.html": "/pokemonfriends/index.html",
+  "precache-manifest.55e12e7574974e4a1644c5482ab5cd05.js": "/pokemonfriends/precache-manifest.55e12e7574974e4a1644c5482ab5cd05.js",
+  "service-worker.js": "/pokemonfriends/service-worker.js",
+  "static/css/2.31de2960.chunk.css.map": "/pokemonfriends/static/css/2.31de2960.chunk.css.map",
+  "static/css/main.b3f8b4f5.chunk.css.map": "/pokemonfriends/static/css/main.b3f8b4f5.chunk.css.map"
 }
