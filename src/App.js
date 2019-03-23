@@ -19,7 +19,7 @@ export default class App extends Component {
             .then(response => {
                 return response.json();
             }).then(pokemons => {
-                this.setState({ pokemons: pokemons.slice(1, 100) });
+                this.setState({ pokemons: pokemons.slice(1, 200) });
             });
     }
 
@@ -34,12 +34,16 @@ export default class App extends Component {
 
         return (
             <div className='tc'>
-                <h1>Pokemon Friends</h1>
-                <SearchBox searchChange={this.onSearchChange} />
-                <Scroll>
-                    <CardList pokemons={filteredPokemons} />
-                </Scroll>
-            </div>
+                <div style={{ position: 'fixed', top: '0', left: '0', zIndex: '999', width: '100%', height: '155px', backgroundColor: 'white' }}>
+                    <h1>Pokemon Friends</h1>
+                    <SearchBox searchChange={this.onSearchChange} />
+                </div>
+                <div style={{ marginTop: '155px' }}>
+                    <Scroll>
+                        <CardList pokemons={filteredPokemons} />
+                    </Scroll>
+                </div>
+            </div >
         )
     };
 };
