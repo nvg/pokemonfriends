@@ -28,7 +28,7 @@ class Card extends React.Component {
             }
         }
         // let cleanedChars = name.replace(/[\u{0080}-\u{FFFF}]/gu, "");
-        return 'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/' + this.pad(this.id) + cleanedName + '.png';
+        return 'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/' + this.pad(this.id) + '.png';
     }
 
     render() {
